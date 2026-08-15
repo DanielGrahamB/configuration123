@@ -269,8 +269,12 @@ final class Settings {
 					<div class="configuration123-card-heading"><span>05</span><div><h2><?php esc_html_e( 'Display anywhere', 'configuration123' ); ?></h2><p><?php esc_html_e( 'Paste these into a Shortcode block, page, post, widget, or template.', 'configuration123' ); ?></p></div></div>
 					<div class="configuration123-code-grid">
 						<div><code>[configuration123 field="owner_phone"]</code><small><?php esc_html_e( 'One public field', 'configuration123' ); ?></small></div>
+						<div><code>[configuration123_owner_card]</code><small><?php esc_html_e( 'Client identity, location, and contact', 'configuration123' ); ?></small></div>
+						<div><code>[configuration123_location]</code><small><?php esc_html_e( 'Selected address line', 'configuration123' ); ?></small></div>
+						<div><code>[configuration123_contact]</code><small><?php esc_html_e( 'Actionable contact methods', 'configuration123' ); ?></small></div>
 						<div><code>[configuration123_profile type="owner"]</code><small><?php esc_html_e( 'Selected client details', 'configuration123' ); ?></small></div>
 						<div><code>[configuration123_profile type="designer"]</code><small><?php esc_html_e( 'Selected designer details', 'configuration123' ); ?></small></div>
+						<div><code>[configuration123_attribution]</code><small><?php esc_html_e( 'Discreet designer attribution', 'configuration123' ); ?></small></div>
 						<div><code>[configuration123_services]</code><small><?php esc_html_e( 'Designer services list', 'configuration123' ); ?></small></div>
 						<div><code>[configuration123_socials]</code><small><?php esc_html_e( 'Available social links', 'configuration123' ); ?></small></div>
 					</div>

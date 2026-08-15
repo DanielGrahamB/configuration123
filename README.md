@@ -17,8 +17,13 @@ A reusable WordPress identity plugin for client sites. It keeps the site, its ow
 
 ```text
 [configuration123 field="owner_phone"]
+[configuration123_owner_card]
+[configuration123_location]
+[configuration123_contact]
 [configuration123_profile type="owner"]
 [configuration123_profile type="designer"]
+[configuration123_attribution]
+[configuration123_copyright]
 [configuration123_services]
 [configuration123_socials]
 ```
