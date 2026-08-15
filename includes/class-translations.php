@@ -214,14 +214,17 @@ final class Translations {
 		}
 
 		$translated = array();
-		$endpoint   = add_query_arg( 'key', $key, 'https://translation.googleapis.com/language/translate/v2' );
+		$endpoint   = 'https://translation.googleapis.com/language/translate/v2';
 
 		foreach ( array_chunk( $sources, 100 ) as $batch ) {
 			$response = wp_remote_post(
 				$endpoint,
 				array(
 					'timeout' => 30,
-					'headers' => array( 'Content-Type' => 'application/json; charset=utf-8' ),
+					'headers' => array(
+						'Content-Type'   => 'application/json; charset=utf-8',
+						'x-goog-api-key' => $key,
+					),
 					'body'    => wp_json_encode(
 						array(
 							'q'      => array_values( $batch ),
