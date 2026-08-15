@@ -10,3 +10,4 @@
 defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
 
 delete_option( 'configuration123_settings' );
+delete_option( 'configuration123_machine_translations' );

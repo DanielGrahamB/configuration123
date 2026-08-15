@@ -3,7 +3,7 @@
  * Plugin Name:       Configuration123
  * Plugin URI:        https://boazdanielgraham.com/
  * Description:       Centralises site identity, owner details, designer attribution, services, and social profiles for reusable WordPress builds.
- * Version:           1.1.0
+ * Version:           1.2.0
  * Requires at least: 6.4
  * Requires PHP:      8.1
  * Author:            Boaz Daniel Graham
@@ -23,13 +23,14 @@ namespace Configuration123;
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'CONFIGURATION123_VERSION', '1.1.0' );
+define( 'CONFIGURATION123_VERSION', '1.2.0' );
 define( 'CONFIGURATION123_FILE', __FILE__ );
 define( 'CONFIGURATION123_PATH', plugin_dir_path( __FILE__ ) );
 define( 'CONFIGURATION123_URL', plugin_dir_url( __FILE__ ) );
 
 require_once CONFIGURATION123_PATH . 'includes/class-defaults.php';
 require_once CONFIGURATION123_PATH . 'includes/functions.php';
+require_once CONFIGURATION123_PATH . 'includes/class-translations.php';
 require_once CONFIGURATION123_PATH . 'includes/class-settings.php';
 require_once CONFIGURATION123_PATH . 'includes/class-frontend.php';
 require_once CONFIGURATION123_PATH . 'includes/class-plugin.php';

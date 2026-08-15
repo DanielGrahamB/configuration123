@@ -11,6 +11,8 @@ A reusable WordPress identity plugin for client sites. It keeps the site, its ow
 - Controls which owner and designer fields are allowed on the public site.
 - Adds field, profile, service, and social shortcodes.
 - Adds a plugin-owned dynamic Gutenberg block that works independently of the active theme.
+- Follows the WordPress interface locale in PHP, frontend output, and the Gutenberg editor.
+- Includes maintained French (France and Canada) catalogs and an opt-in Google Cloud generator for other languages.
 - Adds optional Person or Organization JSON-LD using public data only.
 - Adds an administrator dashboard summary and toolbar shortcut.
 
@@ -36,6 +38,18 @@ Fields not selected under **Public display** return no frontend output.
 Insert **Configuration123 Display** in a page, post, template, header, or footer. Its sidebar control can display the live site identity, owner or designer profile, owner card, contacts, location, services, social profiles, designer attribution, or copyright.
 
 The block metadata is intentionally site-independent. Site names and other values are read from the current WordPress database whenever the block renders, so saved Configuration123 changes appear without editing theme files.
+
+## Languages
+
+English is the source language. Human-maintained `fr_FR` and `fr_CA` catalogs ship in `languages/`, alongside the versioned POT template used to add more reviewed translations.
+
+For another WordPress locale, Configuration123 can generate a machine-translated interface pack through Cloud Translation Basic and cache it in that site's database. No translation request runs during ordinary admin, editor, or frontend page loads. Supply the server-side API key in `wp-config.php` and use **Configuration123 → Languages**:
+
+```php
+define( 'CONFIGURATION123_GOOGLE_TRANSLATE_API_KEY', 'your-server-api-key' );
+```
+
+Restrict the key to the Cloud Translation API and the hosting server where possible. Google Cloud billing and quotas remain the site operator's responsibility. Generated packs can be refreshed or removed from the settings screen.
 
 ## Theme API
 

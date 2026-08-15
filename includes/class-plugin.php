@@ -22,6 +22,7 @@ final class Plugin {
 	public function register_hooks(): void {
 		load_plugin_textdomain( 'configuration123', false, dirname( plugin_basename( CONFIGURATION123_FILE ) ) . '/languages' );
 
+		( new Translations() )->register_hooks();
 		( new Settings() )->register_hooks();
 		( new Frontend() )->register_hooks();
 	}

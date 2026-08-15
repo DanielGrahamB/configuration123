@@ -1,0 +1,662 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Configuration123 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/configuration123\n"
+"POT-Creation-Date: 2026-08-15T15:06:45+00:00\n"
+"PO-Revision-Date: 2026-08-15T15:07:00+00:00\n"
+"Last-Translator: Boaz Daniel Graham\n"
+"Language-Team: Français (Canada)\n"
+"Language: fr_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: configuration123\n"
+
+#. Plugin Name of the plugin
+#: configuration123.php includes/class-frontend.php:58
+#: includes/class-settings.php:41 includes/class-settings.php:42
+#: includes/class-settings.php:189 includes/class-settings.php:401
+msgid "Configuration123"
+msgstr "Configuration123"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: configuration123.php
+msgid "https://boazdanielgraham.com/"
+msgstr "https://boazdanielgraham.com/"
+
+#. Description of the plugin
+#: configuration123.php
+msgid ""
+"Centralises site identity, owner details, designer attribution, services, "
+"and social profiles for reusable WordPress builds."
+msgstr ""
+"Centralise l’identité du site, les coordonnées du propriétaire, "
+"l’attribution du concepteur, les services et les profils sociaux pour des "
+"créations WordPress réutilisables."
+
+#. Author of the plugin
+#: configuration123.php
+msgid "Boaz Daniel Graham"
+msgstr "Boaz Daniel Graham"
+
+#: includes/class-defaults.php:80 includes/class-settings.php:213
+msgid "Business or organisation name"
+msgstr "Nom de l’entreprise ou de l’organisation"
+
+#: includes/class-defaults.php:81 includes/class-settings.php:224
+msgid "Owner name"
+msgstr "Nom du propriétaire"
+
+#: includes/class-defaults.php:82 includes/class-settings.php:225
+msgid "Owner role"
+msgstr "Rôle du propriétaire"
+
+#: includes/class-defaults.php:83 includes/class-settings.php:226
+msgid "Owner email"
+msgstr "Courriel du propriétaire"
+
+#: includes/class-defaults.php:84 includes/class-settings.php:227
+msgid "Owner phone"
+msgstr "Téléphone du propriétaire"
+
+#: includes/class-defaults.php:85 includes/class-frontend.php:254
+#: includes/class-settings.php:228
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: includes/class-defaults.php:86 includes/class-settings.php:230
+msgid "Street address"
+msgstr "Adresse postale"
+
+#: includes/class-defaults.php:87 includes/class-settings.php:231
+msgid "City"
+msgstr "Ville"
+
+#: includes/class-defaults.php:88 includes/class-settings.php:232
+msgid "Region"
+msgstr "Région"
+
+#: includes/class-defaults.php:89 includes/class-settings.php:233
+msgid "Postal code"
+msgstr "Code postal"
+
+#: includes/class-defaults.php:90 includes/class-settings.php:234
+msgid "Country"
+msgstr "Pays"
+
+#: includes/class-defaults.php:91 includes/class-settings.php:229
+msgid "Business hours"
+msgstr "Horaires d’ouverture"
+
+#: includes/class-defaults.php:102 includes/class-settings.php:243
+msgid "Designer name"
+msgstr "Nom du concepteur"
+
+#: includes/class-defaults.php:103 includes/class-settings.php:244
+msgid "Practice name"
+msgstr "Nom de l’activité"
+
+#: includes/class-defaults.php:104 includes/class-settings.php:245
+msgid "Professional description"
+msgstr "Description professionnelle"
+
+#: includes/class-defaults.php:105 includes/class-settings.php:246
+msgid "Designer email"
+msgstr "Courriel du concepteur"
+
+#: includes/class-defaults.php:106 includes/class-settings.php:247
+msgid "Designer phone"
+msgstr "Téléphone du concepteur"
+
+#: includes/class-defaults.php:107 includes/class-settings.php:248
+msgid "Designer website"
+msgstr "Site web du concepteur"
+
+#: includes/class-defaults.php:108
+msgid "Designer location"
+msgstr "Localisation du concepteur"
+
+#: includes/class-defaults.php:109 blocks/display/index.js:52
+msgid "Designer services"
+msgstr "Services du concepteur"
+
+#: includes/class-defaults.php:110 includes/class-frontend.php:195
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: includes/class-defaults.php:111 includes/class-frontend.php:196
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/class-defaults.php:112 includes/class-frontend.php:197
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/class-defaults.php:113 includes/class-frontend.php:198
+msgid "GitHub"
+msgstr "GitHub"
+
+#: includes/class-defaults.php:114
+msgid "X / Twitter"
+msgstr "X / Twitter"
+
+#: includes/class-defaults.php:126 includes/class-settings.php:211
+msgid "Site name"
+msgstr "Nom du site"
+
+#: includes/class-defaults.php:127 includes/class-settings.php:212
+msgid "Site tagline"
+msgstr "Slogan du site"
+
+#: includes/class-defaults.php:128 includes/class-settings.php:215
+msgid "Site description"
+msgstr "Description du site"
+
+#: includes/class-frontend.php:199
+msgid "X"
+msgstr "X"
+
+#: includes/class-frontend.php:250
+msgid "Phone"
+msgstr "Téléphone"
+
+#: includes/class-frontend.php:257
+msgid "Email"
+msgstr "Courriel"
+
+#: includes/class-frontend.php:260
+msgid "Hours"
+msgstr "Horaires"
+
+#: includes/class-frontend.php:299
+msgid "Contact:"
+msgstr "Contact :"
+
+#: includes/class-frontend.php:324
+msgid "Site designer"
+msgstr "Concepteur du site"
+
+#: includes/class-frontend.php:329
+msgid "Designed by"
+msgstr "Conçu par"
+
+#: includes/class-frontend.php:346
+msgid "All rights reserved."
+msgstr "Tous droits réservés."
+
+#: includes/class-settings.php:142
+msgid "The site name cannot be empty. The previous name was kept."
+msgstr "Le nom du site ne peut pas être vide. Le nom précédent a été conservé."
+
+#: includes/class-settings.php:179
+msgid "You do not have permission to manage these settings."
+msgstr "Vous n’avez pas l’autorisation de gérer ces réglages."
+
+#: includes/class-settings.php:188
+msgid "Reusable site identity"
+msgstr "Identité de site réutilisable"
+
+#: includes/class-settings.php:190
+msgid ""
+"One protected place for the client, the site, and the professional who built "
+"it."
+msgstr ""
+"Un espace protégé unique pour le client, le site et le professionnel qui l’a "
+"créé."
+
+#: includes/class-settings.php:194
+msgid "WordPress identity sync is active"
+msgstr "La synchronisation de l’identité WordPress est active"
+
+#: includes/class-settings.php:195
+msgid "Site name and tagline update native WordPress settings when saved."
+msgstr ""
+"Le nom et le slogan du site mettent à jour les réglages natifs de WordPress "
+"lors de l’enregistrement."
+
+#: includes/class-settings.php:208 includes/class-settings.php:368
+#: blocks/display/index.js:46
+msgid "Site identity"
+msgstr "Identité du site"
+
+#: includes/class-settings.php:208
+msgid ""
+"These first two fields drive WordPress’s native Site Title and Tagline "
+"everywhere the active theme uses them."
+msgstr ""
+"Ces deux premiers champs alimentent le titre et le slogan natifs de "
+"WordPress partout où le thème actif les utilise."
+
+#: includes/class-settings.php:211
+msgid "Example: the new name of your uncle’s business."
+msgstr "Exemple : le nouveau nom de l’entreprise de votre oncle."
+
+#: includes/class-settings.php:212
+msgid "A short description used by themes and search metadata."
+msgstr ""
+"Une brève description utilisée par les thèmes et les métadonnées de "
+"recherche."
+
+#: includes/class-settings.php:213
+msgid "May match the site name, but can be the legal or operating name."
+msgstr ""
+"Peut correspondre au nom du site, mais peut aussi être la dénomination "
+"légale ou commerciale."
+
+#: includes/class-settings.php:214
+msgid "Owner type"
+msgstr "Type de propriétaire"
+
+#: includes/class-settings.php:214
+msgid "Organisation or business"
+msgstr "Organisation ou entreprise"
+
+#: includes/class-settings.php:214
+msgid "Individual or freelancer"
+msgstr "Particulier ou travailleur indépendant"
+
+#: includes/class-settings.php:215
+msgid "A concise summary of the business and what the website provides."
+msgstr "Un résumé concis de l’entreprise et de ce que propose le site web."
+
+#: includes/class-settings.php:221
+msgid "Site owner"
+msgstr "Propriétaire du site"
+
+#: includes/class-settings.php:221
+msgid ""
+"Client information remains private unless you select it in Public display "
+"below."
+msgstr ""
+"Les informations du client restent privées sauf si vous les sélectionnez "
+"dans la section Affichage public ci-dessous."
+
+#: includes/class-settings.php:228
+msgid "Use international format when possible."
+msgstr "Utilisez le format international lorsque cela est possible."
+
+#: includes/class-settings.php:240 blocks/display/index.js:48
+msgid "Designer profile"
+msgstr "Profil du concepteur"
+
+#: includes/class-settings.php:240
+msgid ""
+"Reusable defaults for your attribution, services, contact details, and "
+"professional profiles."
+msgstr ""
+"Des valeurs réutilisables pour votre attribution, vos services, vos "
+"coordonnées et vos profils professionnels."
+
+#: includes/class-settings.php:249
+msgid "Working locations"
+msgstr "Zones d’activité"
+
+#: includes/class-settings.php:250
+msgid "Services"
+msgstr "Services"
+
+#: includes/class-settings.php:250
+msgid "Enter one service per line."
+msgstr "Saisissez un service par ligne."
+
+#: includes/class-settings.php:251
+msgid "LinkedIn URL"
+msgstr "URL LinkedIn"
+
+#: includes/class-settings.php:252
+msgid "Facebook URL"
+msgstr "URL Facebook"
+
+#: includes/class-settings.php:253
+msgid "Instagram URL"
+msgstr "URL Instagram"
+
+#: includes/class-settings.php:254
+msgid "GitHub URL"
+msgstr "URL GitHub"
+
+#: includes/class-settings.php:255
+msgid "X / Twitter URL"
+msgstr "URL X / Twitter"
+
+#: includes/class-settings.php:261
+msgid "Public display"
+msgstr "Affichage public"
+
+#: includes/class-settings.php:261
+msgid ""
+"Only selected fields are eligible for profile shortcodes and structured data."
+msgstr ""
+"Seuls les champs sélectionnés peuvent être utilisés par les codes courts de "
+"profil et les données structurées."
+
+#: includes/class-settings.php:263
+msgid "Client fields allowed publicly"
+msgstr "Champs du client autorisés publiquement"
+
+#: includes/class-settings.php:264
+msgid "Designer fields allowed publicly"
+msgstr "Champs du concepteur autorisés publiquement"
+
+#: includes/class-settings.php:268
+msgid "Add basic structured identity data"
+msgstr "Ajouter des données structurées d’identité de base"
+
+#: includes/class-settings.php:268
+msgid ""
+"Outputs a lightweight Person or Organization JSON-LD record using only "
+"public fields."
+msgstr ""
+"Génère un enregistrement JSON-LD léger de type Personne ou Organisation en "
+"utilisant uniquement les champs publics."
+
+#: includes/class-settings.php:273
+msgid "Display anywhere"
+msgstr "Afficher partout"
+
+#: includes/class-settings.php:273
+msgid ""
+"Use the Gutenberg block for visual placement, or keep the shortcodes for "
+"older editors and custom code."
+msgstr ""
+"Utilisez le bloc Gutenberg pour le placement visuel ou conservez les codes "
+"courts pour les anciens éditeurs et le code personnalisé."
+
+#: includes/class-settings.php:277
+msgid "Preferred: Configuration123 Display block"
+msgstr "Recommandé : bloc Affichage Configuration123"
+
+#: includes/class-settings.php:278
+msgid ""
+"In any page, post, header, footer, or template, open the block inserter and "
+"search for “Configuration123 Display”. Select the information type in the "
+"block sidebar."
+msgstr ""
+"Dans une page, une publication, un en-tête, un pied de page ou un modèle, "
+"ouvrez l’outil d’insertion et recherchez « Affichage Configuration123 ». "
+"Sélectionnez le type d’information dans la barre latérale du bloc."
+
+#: includes/class-settings.php:282
+msgid "One public field"
+msgstr "Un champ public"
+
+#: includes/class-settings.php:283
+msgid "Client identity, location, and contact"
+msgstr "Identité, localisation et contact du client"
+
+#: includes/class-settings.php:284
+msgid "Selected address line"
+msgstr "Adresse sélectionnée"
+
+#: includes/class-settings.php:285
+msgid "Actionable contact methods"
+msgstr "Moyens de contact utilisables"
+
+#: includes/class-settings.php:286
+msgid "Selected client details"
+msgstr "Coordonnées sélectionnées du client"
+
+#: includes/class-settings.php:287
+msgid "Selected designer details"
+msgstr "Coordonnées sélectionnées du concepteur"
+
+#: includes/class-settings.php:288
+msgid "Discreet designer attribution"
+msgstr "Attribution discrète au concepteur"
+
+#: includes/class-settings.php:289
+msgid "Current year and public site identity"
+msgstr "Année en cours et identité publique du site"
+
+#: includes/class-settings.php:290
+msgid "Designer services list"
+msgstr "Liste des services du concepteur"
+
+#: includes/class-settings.php:291
+msgid "Available social links"
+msgstr "Liens sociaux disponibles"
+
+#: includes/class-settings.php:296
+msgid "Ready to synchronize?"
+msgstr "Prêt à synchroniser ?"
+
+#: includes/class-settings.php:296
+msgid "Saving immediately updates the native site name and tagline."
+msgstr ""
+"L’enregistrement met immédiatement à jour le nom et le slogan natifs du site."
+
+#: includes/class-settings.php:297
+msgid "Save Configuration"
+msgstr "Enregistrer la configuration"
+
+#: includes/class-settings.php:316
+msgid "Languages"
+msgstr "Langues"
+
+#: includes/class-settings.php:316
+msgid ""
+"Configuration123 follows the current WordPress interface language. English "
+"is the source language, French is maintained by hand, and other languages "
+"can use a cached Google-generated pack."
+msgstr ""
+"Configuration123 suit la langue actuelle de l’interface WordPress. L’anglais "
+"est la langue source, le français est maintenu manuellement et les autres "
+"langues peuvent utiliser un pack mis en cache généré par Google."
+
+#: includes/class-settings.php:318
+msgid "Current interface locale"
+msgstr "Paramètre régional actuel de l’interface"
+
+#: includes/class-settings.php:319
+msgid "Translation source"
+msgstr "Source de la traduction"
+
+#: includes/class-settings.php:322
+msgid "Bundled human translation"
+msgstr "Traduction humaine intégrée"
+
+#: includes/class-settings.php:324
+msgid "Cached Google translation"
+msgstr "Traduction Google mise en cache"
+
+#: includes/class-settings.php:326
+msgid "English fallback"
+msgstr "Repli en anglais"
+
+#: includes/class-settings.php:333
+msgid ""
+"A reviewed translation is already included for this locale; no external "
+"service is needed."
+msgstr ""
+"Une traduction révisée est déjà incluse pour ce paramètre régional ; aucun "
+"service externe n’est nécessaire."
+
+#: includes/class-settings.php:335
+msgid ""
+"To generate other languages, enable Cloud Translation Basic and add this "
+"server-side constant to wp-config.php:"
+msgstr ""
+"Pour générer d’autres langues, activez Cloud Translation Basic et ajoutez "
+"cette constante côté serveur dans wp-config.php :"
+
+#: includes/class-settings.php:337
+msgid ""
+"The key is never sent to the browser. Restrict it in Google Cloud and set a "
+"quota or budget before use."
+msgstr ""
+"La clé n’est jamais envoyée au navigateur. Restreignez-la dans Google Cloud "
+"et définissez un quota ou un budget avant utilisation."
+
+#: includes/class-settings.php:339
+#, php-format
+msgid "This cached pack was generated on %s."
+msgstr "Ce pack mis en cache a été généré le %s."
+
+#: includes/class-settings.php:345
+msgid "Generate language pack"
+msgstr "Générer le pack linguistique"
+
+#: includes/class-settings.php:345
+msgid "Refresh language pack"
+msgstr "Actualiser le pack linguistique"
+
+#: includes/class-settings.php:352
+msgid "Remove generated pack"
+msgstr "Supprimer le pack généré"
+
+#: includes/class-settings.php:384
+msgid "Edit Configuration123"
+msgstr "Modifier Configuration123"
+
+#: includes/class-settings.php:416
+msgid "Settings"
+msgstr "Réglages"
+
+#: includes/class-translations.php:101
+msgid "You do not have permission to generate translations."
+msgstr "Vous n’avez pas l’autorisation de générer des traductions."
+
+#: includes/class-translations.php:109
+msgid "A valid locale and Google Cloud Translation API key are required."
+msgstr ""
+"Un paramètre régional valide et une clé API Google Cloud Translation sont "
+"requis."
+
+#: includes/class-translations.php:128
+msgid "The automatic language pack was generated and cached successfully."
+msgstr ""
+"Le pack linguistique automatique a été généré et mis en cache avec succès."
+
+#: includes/class-translations.php:137
+msgid "You do not have permission to remove translations."
+msgstr "Vous n’avez pas l’autorisation de supprimer des traductions."
+
+#: includes/class-translations.php:146
+msgid "The generated language pack was removed."
+msgstr "Le pack linguistique généré a été supprimé."
+
+#: includes/class-translations.php:237
+msgid "Google Cloud Translation could not be reached. Please try again."
+msgstr "Google Cloud Translation est inaccessible. Veuillez réessayer."
+
+#: includes/class-translations.php:242
+msgid ""
+"Google Cloud Translation rejected the request. Check the API key, billing, "
+"restrictions, and target language."
+msgstr ""
+"Google Cloud Translation a refusé la requête. Vérifiez la clé API, la "
+"facturation, les restrictions et la langue cible."
+
+#: includes/class-translations.php:247
+msgid "Google Cloud Translation returned an incomplete language pack."
+msgstr "Google Cloud Translation a renvoyé un pack linguistique incomplet."
+
+#: includes/class-translations.php:269
+msgid "The Configuration123 source language catalog is missing."
+msgstr "Le catalogue de langue source de Configuration123 est introuvable."
+
+#: includes/class-translations.php:275
+msgid "The Configuration123 source language catalog could not be read."
+msgstr "Le catalogue de langue source de Configuration123 n’a pas pu être lu."
+
+#: blocks/display/index.js:18
+msgid "Configuration123 Display"
+msgstr "Affichage Configuration123"
+
+#: blocks/display/index.js:19
+msgid "Display information that stays synchronized with Configuration123."
+msgstr ""
+"Affiche des informations qui restent synchronisées avec Configuration123."
+
+#: blocks/display/index.js:23
+msgid "identity"
+msgstr "identité"
+
+#: blocks/display/index.js:24
+msgid "contact"
+msgstr "contact"
+
+#: blocks/display/index.js:25
+msgid "profile"
+msgstr "profil"
+
+#: blocks/display/index.js:43
+msgid "Information to display"
+msgstr "Informations à afficher"
+
+#: blocks/display/index.js:47
+msgid "Owner profile"
+msgstr "Profil du propriétaire"
+
+#: blocks/display/index.js:49
+msgid "Owner card"
+msgstr "Fiche du propriétaire"
+
+#: blocks/display/index.js:50
+msgid "Contact methods"
+msgstr "Moyens de contact"
+
+#: blocks/display/index.js:51
+msgid "Location"
+msgstr "Localisation"
+
+#: blocks/display/index.js:53
+msgid "Social profiles"
+msgstr "Profils sociaux"
+
+#: blocks/display/index.js:54
+msgid "Designer attribution"
+msgstr "Attribution au concepteur"
+
+#: blocks/display/index.js:55
+msgid "Copyright"
+msgstr "Droits d’auteur"
+
+#: blocks/display/index.js:66
+msgid "Show field labels"
+msgstr "Afficher les libellés des champs"
+
+#: blocks/display/index.js:77
+msgid "Use compact presentation"
+msgstr "Utiliser une présentation compacte"
+
+#: blocks/display/index.js:93
+msgid "Configuration123 display"
+msgstr "Affichage Configuration123"
+
+#: blocks/display/block.json
+msgctxt "block title"
+msgid "Configuration123 Display"
+msgstr "Affichage Configuration123"
+
+#: blocks/display/block.json
+msgctxt "block description"
+msgid ""
+"Display live site, owner, contact, service, social, or designer information "
+"from Configuration123."
+msgstr ""
+"Affiche en direct les informations du site, du propriétaire, des contacts, "
+"des services, des profils sociaux ou du concepteur provenant de "
+"Configuration123."
+
+#: blocks/display/block.json
+msgctxt "block keyword"
+msgid "identity"
+msgstr "identité"
+
+#: blocks/display/block.json
+msgctxt "block keyword"
+msgid "contact"
+msgstr "contact"
+
+#: blocks/display/block.json
+msgctxt "block keyword"
+msgid "profile"
+msgstr "profil"
+
+#: blocks/display/block.json
+msgctxt "block keyword"
+msgid "configuration"
+msgstr "configuration"

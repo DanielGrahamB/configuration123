@@ -180,6 +180,7 @@ final class Settings {
 		}
 
 		$options = $this->options();
+		$translation_notice = Translations::consume_notice();
 		?>
 		<div class="wrap configuration123-wrap">
 			<header class="configuration123-hero">
@@ -196,6 +197,9 @@ final class Settings {
 			</header>
 
 			<?php settings_errors( Defaults::OPTION_NAME ); ?>
+			<?php if ( ! empty( $translation_notice['message'] ) ) : ?>
+				<div class="notice notice-<?php echo esc_attr( 'success' === ( $translation_notice['type'] ?? '' ) ? 'success' : 'error' ); ?> is-dismissible"><p><?php echo esc_html( (string) $translation_notice['message'] ); ?></p></div>
+			<?php endif; ?>
 
 			<form action="options.php" method="post" class="configuration123-form">
 				<?php settings_fields( self::OPTION_GROUP ); ?>
@@ -293,7 +297,69 @@ final class Settings {
 					<?php submit_button( __( 'Save Configuration', 'configuration123' ), 'primary', 'submit', false ); ?>
 				</div>
 			</form>
+			<?php $this->render_translation_section(); ?>
 		</div>
+		<?php
+	}
+
+	/**
+	 * Render opt-in, cached automatic language-pack controls outside the settings form.
+	 */
+	private function render_translation_section(): void {
+		$locale       = Translations::current_locale();
+		$bundled      = Translations::has_bundled_pack( $locale );
+		$generated    = Translations::generated_pack( $locale );
+		$has_api_key  = Translations::has_google_api_key();
+		$generated_at = isset( $generated['generated_at'] ) ? absint( $generated['generated_at'] ) : 0;
+		?>
+		<section class="configuration123-card configuration123-translations">
+			<div class="configuration123-card-heading"><span>06</span><div><h2><?php esc_html_e( 'Languages', 'configuration123' ); ?></h2><p><?php esc_html_e( 'Configuration123 follows the current WordPress interface language. English is the source language, French is maintained by hand, and other languages can use a cached Google-generated pack.', 'configuration123' ); ?></p></div></div>
+			<div class="configuration123-language-status">
+				<div><small><?php esc_html_e( 'Current interface locale', 'configuration123' ); ?></small><strong><?php echo esc_html( $locale ); ?></strong></div>
+				<div><small><?php esc_html_e( 'Translation source', 'configuration123' ); ?></small><strong>
+					<?php
+					if ( $bundled ) {
+						esc_html_e( 'Bundled human translation', 'configuration123' );
+					} elseif ( ! empty( $generated ) ) {
+						esc_html_e( 'Cached Google translation', 'configuration123' );
+					} else {
+						esc_html_e( 'English fallback', 'configuration123' );
+					}
+					?>
+				</strong></div>
+			</div>
+
+			<?php if ( $bundled ) : ?>
+				<p class="configuration123-language-note"><?php esc_html_e( 'A reviewed translation is already included for this locale; no external service is needed.', 'configuration123' ); ?></p>
+			<?php elseif ( ! $has_api_key ) : ?>
+				<p class="configuration123-language-note"><?php esc_html_e( 'To generate other languages, enable Cloud Translation Basic and add this server-side constant to wp-config.php:', 'configuration123' ); ?></p>
+				<code class="configuration123-language-constant">define( 'CONFIGURATION123_GOOGLE_TRANSLATE_API_KEY', 'your-server-api-key' );</code>
+				<p class="description"><?php esc_html_e( 'The key is never sent to the browser. Restrict it in Google Cloud and set a quota or budget before use.', 'configuration123' ); ?></p>
+			<?php else : ?>
+				<?php
+				if ( $generated_at > 0 ) :
+					/* translators: %s: localized date and time when the language pack was generated. */
+					?>
+					<p class="configuration123-language-note"><?php echo esc_html( sprintf( __( 'This cached pack was generated on %s.', 'configuration123' ), wp_date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $generated_at ) ) ); ?></p>
+				<?php endif; ?>
+				<div class="configuration123-language-actions">
+					<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+						<input type="hidden" name="action" value="<?php echo esc_attr( Translations::generate_action() ); ?>">
+						<input type="hidden" name="locale" value="<?php echo esc_attr( $locale ); ?>">
+						<?php wp_nonce_field( Translations::generate_action() ); ?>
+						<?php submit_button( empty( $generated ) ? __( 'Generate language pack', 'configuration123' ) : __( 'Refresh language pack', 'configuration123' ), 'secondary', 'submit', false ); ?>
+					</form>
+					<?php if ( ! empty( $generated ) ) : ?>
+						<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+							<input type="hidden" name="action" value="<?php echo esc_attr( Translations::delete_action() ); ?>">
+							<input type="hidden" name="locale" value="<?php echo esc_attr( $locale ); ?>">
+							<?php wp_nonce_field( Translations::delete_action() ); ?>
+							<?php submit_button( __( 'Remove generated pack', 'configuration123' ), 'link-delete', 'submit', false ); ?>
+						</form>
+					<?php endif; ?>
+				</div>
+			<?php endif; ?>
+		</section>
 		<?php
 	}
 

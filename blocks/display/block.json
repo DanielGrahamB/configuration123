@@ -2,7 +2,7 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "configuration123/display",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Configuration123 Display",
   "category": "configuration123",
   "icon": "admin-settings",
