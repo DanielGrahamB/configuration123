@@ -21,8 +21,46 @@ final class Frontend {
 	 */
 	public function register_hooks(): void {
 		add_action( 'init', array( $this, 'register_shortcodes' ) );
+		add_action( 'init', array( $this, 'register_blocks' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 		add_action( 'wp_head', array( $this, 'render_schema' ), 30 );
+		add_filter( 'block_categories_all', array( $this, 'register_block_category' ) );
+	}
+
+	/**
+	 * Register plugin-owned Gutenberg blocks for theme-independent placement.
+	 */
+	public function register_blocks(): void {
+		$block_path = CONFIGURATION123_PATH . 'blocks/display';
+
+		if ( is_readable( $block_path . '/block.json' ) ) {
+			register_block_type( $block_path );
+		}
+	}
+
+	/**
+	 * Add a dedicated Configuration123 block-inserter category.
+	 *
+	 * @param array<int, array<string, mixed>> $categories Existing block categories.
+	 * @return array<int, array<string, mixed>>
+	 */
+	public function register_block_category( array $categories ): array {
+		foreach ( $categories as $category ) {
+			if ( 'configuration123' === ( $category['slug'] ?? '' ) ) {
+				return $categories;
+			}
+		}
+
+		array_unshift(
+			$categories,
+			array(
+				'slug'  => 'configuration123',
+				'title' => __( 'Configuration123', 'configuration123' ),
+				'icon'  => 'admin-settings',
+			)
+		);
+
+		return $categories;
 	}
 
 	/**

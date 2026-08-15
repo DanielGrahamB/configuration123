@@ -271,6 +271,29 @@
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.configuration123-block-guide {
+	align-items: flex-start;
+	background: #fff3f8;
+	border: 1px solid #e7c8d6;
+	border-radius: 10px;
+	display: flex;
+	gap: 14px;
+	margin-bottom: 18px;
+	padding: 16px;
+}
+
+.configuration123-block-guide .dashicons {
+	color: #b43f74;
+	font-size: 24px;
+	height: 24px;
+	width: 24px;
+}
+
+.configuration123-block-guide p {
+	color: var(--c123-muted);
+	margin: 5px 0 0;
+}
+
 .configuration123-code-grid > div {
 	background: #17131a;
 	border-radius: 8px;

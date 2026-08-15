@@ -1,0 +1,21 @@
+.wp-block-configuration123-display.configuration123-display {
+	box-sizing: border-box;
+}
+
+.configuration123-site-identity {
+	display: grid;
+	gap: 0.15em;
+}
+
+.configuration123-site-identity__name,
+.configuration123-site-identity__tagline {
+	display: block;
+}
+
+.configuration123-site-identity__tagline {
+	opacity: 0.72;
+}
+
+.wp-block-configuration123-display.is-compact {
+	font-size: 0.9em;
+}

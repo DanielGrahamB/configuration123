@@ -2,7 +2,7 @@
 
 A reusable WordPress identity plugin for client sites. It keeps the site, its owner, and the site designer in one protected settings screen without coupling those details to a theme.
 
-## Version 1 features
+## Features
 
 - Synchronizes **Site name** with WordPress `blogname`.
 - Synchronizes **Site tagline** with WordPress `blogdescription`.
@@ -10,6 +10,7 @@ A reusable WordPress identity plugin for client sites. It keeps the site, its ow
 - Includes a reusable Boaz Daniel Graham designer profile and service defaults.
 - Controls which owner and designer fields are allowed on the public site.
 - Adds field, profile, service, and social shortcodes.
+- Adds a plugin-owned dynamic Gutenberg block that works independently of the active theme.
 - Adds optional Person or Organization JSON-LD using public data only.
 - Adds an administrator dashboard summary and toolbar shortcut.
 
@@ -29,6 +30,12 @@ A reusable WordPress identity plugin for client sites. It keeps the site, its ow
 ```
 
 Fields not selected under **Public display** return no frontend output.
+
+## Gutenberg block
+
+Insert **Configuration123 Display** in a page, post, template, header, or footer. Its sidebar control can display the live site identity, owner or designer profile, owner card, contacts, location, services, social profiles, designer attribution, or copyright.
+
+The block metadata is intentionally site-independent. Site names and other values are read from the current WordPress database whenever the block renders, so saved Configuration123 changes appear without editing theme files.
 
 ## Theme API
 

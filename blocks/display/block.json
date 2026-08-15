@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "configuration123/display",
+  "version": "1.1.0",
+  "title": "Configuration123 Display",
+  "category": "configuration123",
+  "icon": "admin-settings",
+  "description": "Display live site, owner, contact, service, social, or designer information from Configuration123.",
+  "keywords": ["identity", "contact", "profile", "configuration"],
+  "textdomain": "configuration123",
+  "attributes": {
+    "view": {
+      "type": "string",
+      "default": "site-identity",
+      "enum": [
+        "site-identity",
+        "owner-profile",
+        "designer-profile",
+        "owner-card",
+        "contact",
+        "location",
+        "services",
+        "socials",
+        "attribution",
+        "copyright"
+      ]
+    },
+    "compact": {
+      "type": "boolean",
+      "default": false
+    },
+    "showLabels": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "anchor": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}
