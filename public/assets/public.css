@@ -1,0 +1,114 @@
+.configuration123-profile {
+	display: grid;
+	gap: 0;
+	margin: 1.5em 0;
+}
+
+.configuration123-profile__row {
+	border-bottom: 1px solid currentColor;
+	display: grid;
+	gap: 0.5rem 1rem;
+	grid-template-columns: minmax(8rem, 0.35fr) minmax(0, 1fr);
+	opacity: 0.88;
+	padding: 0.65rem 0;
+}
+
+.configuration123-profile dt {
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.configuration123-profile dd {
+	margin: 0;
+}
+
+.configuration123-services,
+.configuration123-socials {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+	list-style: none;
+	margin: 1.25em 0;
+	padding: 0;
+}
+
+.configuration123-services li,
+.configuration123-socials a {
+	border: 1px solid currentColor;
+	border-radius: 999px;
+	display: inline-flex;
+	padding: 0.45rem 0.8rem;
+}
+
+.configuration123-contact {
+	display: grid;
+	gap: 0.55rem;
+	list-style: none;
+	margin: 1em 0;
+	padding: 0;
+}
+
+.configuration123-contact li,
+.configuration123-contact a,
+.configuration123-contact__text {
+	min-width: 0;
+}
+
+.configuration123-contact a,
+.configuration123-contact__text {
+	display: grid;
+	gap: 0.05rem;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+}
+
+.configuration123-contact a > span,
+.configuration123-contact__text > span {
+	font-size: 0.72em;
+	font-weight: 750;
+	letter-spacing: 0.06em;
+	opacity: 0.72;
+	text-transform: uppercase;
+}
+
+.configuration123-contact--compact {
+	font-size: 0.9em;
+}
+
+.configuration123-owner-card {
+	display: grid;
+	font-style: normal;
+	gap: 0.35rem;
+}
+
+.configuration123-owner-card__organization,
+.configuration123-owner-card__owner,
+.configuration123-owner-card__location {
+	display: block;
+}
+
+.configuration123-owner-card__organization {
+	font-size: 1.05em;
+}
+
+.configuration123-owner-card--compact {
+	font-size: 0.9em;
+}
+
+.configuration123-attribution {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 0.2rem 0.65rem;
+}
+
+.configuration123-attribution__role {
+	opacity: 0.76;
+}
+
+@media (max-width: 600px) {
+	.configuration123-profile__row {
+		grid-template-columns: 1fr;
+	}
+}
