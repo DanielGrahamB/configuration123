@@ -8,7 +8,7 @@
  * Requires PHP:      8.1
  * Author:            Boaz Daniel Graham
  * Author URI:        https://boazdanielgraham.ca/projects/configuration-123/
- * GitHub Plugin URI: https://github.com/DanielGrahamB/configuration123
+ * GitHub URI:        https://github.com/DanielGrahamB/configuration123
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       configuration123
