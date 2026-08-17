@@ -280,7 +280,7 @@ final class Translations {
 
 		$protected = array(
 			'Configuration123',
-			'https://boazdanielgraham.com/',
+			'https://boazdanielgraham.ca/',
 			'Boaz Daniel Graham',
 			'WhatsApp',
 			'LinkedIn',

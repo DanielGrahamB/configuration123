@@ -27,7 +27,7 @@ msgstr ""
 #. Plugin URI of the plugin
 #. Author URI of the plugin
 #: configuration123.php
-msgid "https://boazdanielgraham.com/"
+msgid "https://boazdanielgraham.ca/"
 msgstr ""
 
 #. Description of the plugin

@@ -46,7 +46,7 @@ final class Defaults {
 			'designer_role'        => 'Independent security researcher & web systems builder',
 			'designer_email'       => '',
 			'designer_phone'       => '',
-			'designer_website'     => 'https://boazdanielgraham.com/',
+			'designer_website'     => 'https://boazdanielgraham.ca/',
 			'designer_location'    => 'Montréal · Cameroon · Remote',
 			'designer_services'    => implode(
 				"\n",

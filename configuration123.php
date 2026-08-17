@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name:       Configuration123
- * Plugin URI:        https://boazdanielgraham.com/
+ * Plugin URI:        https://boazdanielgraham.ca/
  * Description:       Centralises site identity, owner details, designer attribution, services, and social profiles for reusable WordPress builds.
  * Version:           1.2.0
  * Requires at least: 6.4
  * Requires PHP:      8.1
  * Author:            Boaz Daniel Graham
- * Author URI:        https://boazdanielgraham.com/
+ * Author URI:        https://boazdanielgraham.ca/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       configuration123
